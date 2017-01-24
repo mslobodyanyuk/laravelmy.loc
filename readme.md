@@ -18,13 +18,15 @@ Actions on deployment of the project:
 
 2. domain settings `hosts file`, `httpd.conf`.
 
-3. -.> Setting .env
+3. database settings .env file
 >- Rename .env.example -> .env
 >- Make a  new database - `laravelmytest` for example,
-
+	
+	```
     DB_DATABASE = laravelmytest
     DB_USERNAME = root
     DB_PASSWORD =
+	```
 
 4. `> php artisan migrate` ( _perform_ _all_ _migration_ ).
 
