@@ -1,23 +1,40 @@
-## Laravel PHP Framework
+A task:
+===================================
+Create small site framework Laravel
+---
+Features version of the framework:
+    At the beginning of the study framework Laravel, faced with a shortage of files and folders, and specifically related to the authorization, registration.
+    It's all about the version of the framework. In version 5.0 all present.
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/downloads.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+Check version can command in command line:
+---
+>`php artisan --version` (_previously_, _go_ _to_ _the_ _project_ _directory_ _using_ _the_ _cd_ _command_).
+>To install the required  `version 5.0` in command line must run:
+>`composer create-project laravel / laravel ./ 5.0` (_in_ _this_ _case_ _the_ _project_ _folder_ _should_ _be_ _empty_)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+Actions on deployment of the project:
+=====================================
+1. after 1 n composer install laravelmy.loc folder in the Project -> copy the contents of the folder are deleted.
 
-Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+2. domain settings `hosts file`, `httpd.conf`.
 
-## Official Documentation
+3. -.> Setting .env
+>- Rename .env.example -> .env
+>- Make a  new database - `laravelmytest` for example,
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+    DB_DATABASE = laravelmytest
+    DB_USERNAME = root
+    DB_PASSWORD =
 
-## Contributing
+4. `> php artisan migrate` ( _perform_ _all_ _migration_ ).
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+5. `> php artisan db: seed` ( _seeder_ _starts_ _to_ _fill_ _all_ _the_ _database_ _tables_ _in_ _class_ _DatabaseSeeder_ ).
 
-### License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+Features menu:
+==============
+Menu item    			 | short description
+-------------------------|--------------------------------------------------------
+**RESUME** 				 | - file pdf - can be viewed, if necessary -  downloaded.
+**Test task ModeraTest** | - description of the execution of the test task.
+**About me**			 | - data is taken from the json-file.
+**Contacts**			 | - data is taken from the json-file.
