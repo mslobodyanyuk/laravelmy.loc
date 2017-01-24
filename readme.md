@@ -14,9 +14,9 @@ Check version can command in command line:
 
 Actions on deployment of the project:
 =====================================
-1. after 1 n composer install laravelmy.loc folder in the Project -> copy the contents of the folder are deleted.
+1. after `composer install` laravelmy.loc folder in the Project ->  copy the contents of the folder and remove folder.
 
-2. domain settings `hosts file`, `httpd.conf`.
+2. configure domain settings `hosts file`, `httpd.conf`.
 
 3. database settings .env file
 >- Rename .env.example -> .env
