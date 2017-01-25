@@ -1,6 +1,6 @@
 A task:
 ===================================
-Create small site framework Laravel
+Create small website framework Laravel
 ---
 Features version of the framework:
     At the beginning of the study framework Laravel, faced with a shortage of files and folders, and specifically related to the authorization, registration.
@@ -20,7 +20,7 @@ Actions on deployment of the project:
 
 3. database settings .env file
 >- Rename .env.example -> .env
->- Make a  new database - `laravelmytest` for example,
+>- Make a  new database - `laravelmytest` for example ( utf8_general_ci encoding ),
 	
 	```
     DB_DATABASE = laravelmytest
